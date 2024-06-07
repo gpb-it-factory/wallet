@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: wallet
+  datasource:
+    url: jdbc:postgresql://localhost:5432/education
+    hikari:
+      connectionTimeout: 20000
+      maximumPoolSize: 5
+      schema: gpb
+      connection-init-sql: CREATE SCHEMA IF NOT EXISTS "gpb";
+  jpa:
+    hibernate:
+      ddl-auto: none
+  liquibase:
+    enabled: false
