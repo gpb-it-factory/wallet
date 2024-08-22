@@ -8,6 +8,9 @@ spring:
       maximumPoolSize: 5
       schema: gpb
       connection-init-sql: CREATE SCHEMA IF NOT EXISTS "gpb";
+    # TODO перенести в хранилище секретов
+    password: postgres
+    username: postgres
   jpa:
     hibernate:
       ddl-auto: none

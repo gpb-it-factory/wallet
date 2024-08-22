@@ -1,6 +1,6 @@
 CREATE SCHEMA IF NOT EXISTS gpb;
 
-CREATE TABLE IF NOT EXISTS wallet (
+CREATE TABLE IF NOT EXISTS gpb.wallet (
     client_id VARCHAR NOT NULL,
     balance DECIMAL(19, 2) NOT NULL,
     currency VARCHAR(3) NOT NULL,
